@@ -5,12 +5,47 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Quantum</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
+	<div class="header">
+		<div class="header__container">
+			<div class="header__logo">QUANTUM</div>
+			<form class="header__search">
+				<div class="header__search-input-wrapper">
+					<input name="search" class="header__search-input" type="text" placeholder="Search goods">
+				</div>
+				<div class="header__search-dropdown">
 
+					<div data-select class="header-select">
+						<div data-select-title class="header-select__title">CATEGORY</div>
+						<div class="header-select__dropdown hidden">
+							<div data-select-item="Mobile" class="header-select__dropdown-item">Mobile</div>
+							<div data-select-item="Tablets" class="header-select__dropdown-item">Tablets</div>
+							<div data-select-item="Mac book" class="header-select__dropdown-item">Mac book</div>
+						</div>
+					</div>
+
+					<select class="hidden" name="category" id="category" value=''>
+						<option value="none">CATEGOTY</option>
+						<option value="Mobile">Mobile</option>
+						<option value="Tablets">Tablets</option>
+						<option value="Mac book">Mac Book</option>
+					</select>
+				</div>
+				<div class="header__search-button-wrapper">
+					<button class="header__search-button" type="submit"><img src="img/search-icon.png"
+							alt="search-icon"></button>
+				</div>
+			</form>
+			<div class="header__buttons"></div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
