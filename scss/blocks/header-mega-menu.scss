@@ -1,0 +1,18 @@
+.header-mega-menu-link {
+  color: #808080;
+
+  &:hover {
+    .cls-1 {
+      fill: $blue;
+    }
+    color: $blue;
+  }
+}
+.header-mega-menu-icon {
+  margin-right: 10px;
+}
+.header-mega-menu-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+}

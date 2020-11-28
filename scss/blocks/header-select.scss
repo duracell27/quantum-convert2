@@ -59,3 +59,19 @@
     background-color: rgb(252, 252, 252);
   }
 }
+
+.header-select.header-select--navigation {
+  padding: 0 28px;
+  .header-select__title {
+    font-weight: 500;
+    text-transform: none;
+    font-size: 14px;
+    color: #b3b3b3;
+    line-height: 1;
+    width: auto;
+    padding-right: 16px;
+    &::after {
+      top: 5px;
+    }
+  }
+}

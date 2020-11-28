@@ -42,7 +42,145 @@
 							alt="search-icon"></button>
 				</div>
 			</form>
-			<div class="header__buttons"></div>
+			<div class="header__buttons">
+				<a href="#" class="header__button ">
+					<span class="header__button-icon header__button--notify"><svg class="icon-svg"
+							xmlns="http://www.w3.org/2000/svg" width="20.156" height="20" viewBox="0 0 20.156 20">
+							<defs>
+								<style>
+									.cls-1 {
+										fill: gray;
+										fill-rule: evenodd;
+									}
+								</style>
+							</defs>
+							<path id="icon" class="cls-1"
+								d="M915,377a2,2,0,1,0,2,2A2,2,0,0,0,915,377Zm-11.992,2A2,2,0,1,0,905,377,2,2,0,0,0,903.008,379Zm13.3-14H904.16l2.24,4.73,0.129,0.27h7.021Zm-13.1-2H919l0.16,0.96-3.862,7.01A1.988,1.988,0,0,1,913.55,372H906.1l-0.9,1.63-0.03.12a0.256,0.256,0,0,0,.249.25H917v2H905a2.005,2.005,0,0,1-2-2,1.933,1.933,0,0,1,.249-0.96l1.352-2.45L901,363h-2v-2h3.269Z"
+								transform="translate(-899 -361)" />
+						</svg></span>
+					<span class="header__button-text">2 Items</span>
+				</a>
+				<a href="#" class="header__button ">
+					<span class="header__button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18.344"
+							viewBox="0 0 20 18.344">
+							<defs>
+								<style>
+									.cls-1 {
+										fill: gray;
+										fill-rule: evenodd;
+									}
+								</style>
+							</defs>
+							<path id="wishlist_icon" data-name="wishlist icon" class="cls-1"
+								d="M1030.1,377.55l-0.1.1-0.1-.1c-4.76-4.31-7.9-7.16-7.9-10.05a3.418,3.418,0,0,1,3.5-3.5,3.909,3.909,0,0,1,3.57,2.36h1.87a3.885,3.885,0,0,1,3.56-2.36,3.418,3.418,0,0,1,3.5,3.5C1038,370.39,1034.86,373.24,1030.1,377.55Zm4.4-15.55a5.889,5.889,0,0,1-9,0,5.447,5.447,0,0,0-5.5,5.5c0,3.78,3.4,6.86,8.55,11.54l1.45,1.31,1.45-1.32c5.15-4.67,8.55-7.75,8.55-11.53A5.447,5.447,0,0,0,1034.5,362Z"
+								transform="translate(-1020 -362)" />
+						</svg></span>
+					<span class="header__button-text">Wish List</span>
+				</a>
+				<a href="#" class="header__button ">
+					<span class="header__button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+							viewBox="0 0 16 16">
+							<defs>
+								<style>
+									.cls-1 {
+										fill: gray;
+										fill-rule: evenodd;
+									}
+								</style>
+							</defs>
+							<path id="user_icon" data-name="user icon" class="cls-1"
+								d="M1165,372c-2.67,0-8,1.34-8,4v3h16v-3C1173,373.34,1167.67,372,1165,372Zm0-9a4,4,0,1,0,4,4A4,4,0,0,0,1165,363Zm0,10.9c2.97,0,6.1,1.46,6.1,2.1v1.1h-12.2V376C1158.9,375.36,1162.03,373.9,1165,373.9Zm0-9a2.1,2.1,0,1,1-2.1,2.1A2.1,2.1,0,0,1,1165,364.9Z"
+								transform="translate(-1157 -363)" />
+						</svg></span>
+					<span class="header__button-text">Sign In</span>
+				</a>
+			</div>
+		</div>
+		<div class="header__nav">
+			<nav class="header-nav">
+				<div class="header-nav__categories">
+					<div class="header-mega-menu-link">
+						<span class="header-mega-menu-icon"><svg xmlns="http://www.w3.org/2000/svg" width="18"
+								height="12" viewBox="0 0 18 12">
+								<defs>
+									<style>
+										.cls-1 {
+											fill: gray;
+											fill-rule: evenodd;
+										}
+									</style>
+								</defs>
+								<path id="menu_icon" data-name="menu icon" class="cls-1"
+									d="M197,459v2h18v-2H197Zm0,7h18v-2H197v2Zm0,5h18v-2H197v2Z"
+									transform="translate(-197 -459)" />
+							</svg>
+						</span>
+						<span class="header-mega-menu-text">All Categories</span>
+					</div>
+				</div>
+				<div class="header-nav__deals">
+					<a href="#" class="header-nav__link">Super Deals</a>
+					<a href="#" class="header-nav__link">Featured Brands</a>
+					<a href="#" class="header-nav__link">Collections</a>
+					<a href="#" class="header-nav__link">Bestselling</a>
+				</div>
+				<div class="header-nav__select">
+					<div class="header-nav__select-item">
+
+						<div data-select class="header-select header-select--navigation">
+							<div data-select-title class="header-select__title">Help</div>
+							<div class="header-select__dropdown hidden">
+								<div data-select-item="nehelp" class="header-select__dropdown-item">nehelp</div>
+								<div data-select-item="contacts" class="header-select__dropdown-item">contacts</div>
+								<div data-select-item="about" class="header-select__dropdown-item">about</div>
+							</div>
+						</div>
+
+						<select class="hidden" name="category" id="category" value=''>
+							<option value="help">Help</option>
+							<option value="nehelp">nehelp</option>
+							<option value="contacts">contacts</option>
+							<option value="about">about</option>
+						</select>
+					</div>
+					<div class="header-nav__select-item">
+
+						<div data-select class="header-select header-select--navigation">
+							<div data-select-title class="header-select__title">USD</div>
+							<div class="header-select__dropdown hidden">
+								<div data-select-item="eur" class="header-select__dropdown-item">EUR</div>
+								<div data-select-item="pl" class="header-select__dropdown-item">PL</div>
+								<div data-select-item="uah" class="header-select__dropdown-item">UAH</div>
+							</div>
+						</div>
+
+						<select class="hidden" name="category" id="category" value=''>
+							<option value="usd">usd</option>
+							<option value="eur">eur</option>
+							<option value="pl">pl</option>
+							<option value="uah">uah</option>
+						</select>
+					</div>
+					<div class="header-nav__select-item">
+
+						<div data-select class="header-select header-select--navigation">
+							<div data-select-title class="header-select__title">Language</div>
+							<div class="header-select__dropdown hidden">
+								<div data-select-item="Ukrainian" class="header-select__dropdown-item">Ukrainian</div>
+								<div data-select-item="English" class="header-select__dropdown-item">English</div>
+								<div data-select-item="Polska" class="header-select__dropdown-item">Polska</div>
+							</div>
+						</div>
+
+						<select class="hidden" name="category" id="category" value=''>
+							<option value="Language">Language</option>
+							<option value="Ukrainian">Ukrainian</option>
+							<option value="English">English</option>
+							<option value="Polska">Polska</option>
+						</select>
+					</div>
+				</div>
+			</nav>
 		</div>
 	</div>
 	<script src="js/main.js"></script>
