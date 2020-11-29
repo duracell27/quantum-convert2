@@ -416,7 +416,7 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 50px;
+  bottom: 35px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -430,18 +430,107 @@ p {
   width: 68px;
   height: 2px;
   margin: 15px 15px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   display: block;
   outline: none;
   border: none;
   -webkit-backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 30px;
+  transition: background-color 0.5s linear;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: white;
+  background-color: white;
   outline: none;
   border: none;
+}
+
+.promo-section__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.promo-section__col {
+  max-width: 350px;
+}
+
+.promo-section__item-link-wrapper {
+  display: block;
+}
+
+.promo-section__item {
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.3s linear;
+}
+.promo-section__item:hover {
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.2);
+}
+
+.promo-section__item--bg-img {
+  background-image: url("../../img/hand.jpg");
+  justify-content: flex-end;
+  padding-bottom: 45px;
+}
+.promo-section__item--bg-img .promo-section__item-subtitle {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+.promo-section__item--bg-img .promo-section__item-title {
+  color: #fff;
+}
+
+.promo-section__item-title {
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.promo-section__item-subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b3b3b3;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.promo-section__item-img-cell {
+  width: 116px;
+  margin-right: 25px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo-section__item-title-cell h4 {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  text-align: left;
+}
+
+.promo-section__item-small {
+  flex-direction: row;
+  padding: 20px;
+  height: 150px;
+}
+
+.promo-section__item-link-wrapper--mb {
+  margin-bottom: 30px;
 }
