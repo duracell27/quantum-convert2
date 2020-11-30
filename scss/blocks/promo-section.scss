@@ -27,7 +27,7 @@
   text-align: center;
   transition: box-shadow 0.3s linear, transform 0.3s linear;
   &:hover {
-    transform: scaleY(-5px);
+    transform: translateY(-5px);
     box-shadow: 0 3px 25px rgba($black, 0.2);
   }
 }
