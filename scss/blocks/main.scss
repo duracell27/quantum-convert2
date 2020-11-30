@@ -1,0 +1,15 @@
+.main-content {
+  margin-bottom: 100px;
+}
+
+.main__row {
+  display: flex;
+}
+.main__column-left {
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 255px;
+}
+
+.main__column-right {
+}
